@@ -6,7 +6,18 @@
 
 Note that this not use any files in this repo.
 
-Here we use `centos` but other ideas are to use `alpine` (Debian) or `archlinux`. Or `ubuntu` or `FROM ubuntu:16.04`.
+### Choose a base image
+
+Ideas:
+
+- `centos`
+- `alpine` (Debian)
+- `archlinux`
+- `ubuntu` (same as `ubuntu:latest`)
+- `ubuntu:20.04`
+
+
+We use `centos` for the example below.
 
 ### Pull
 
@@ -19,11 +30,21 @@ $ docker pull centos
 ### Run
 
 ```sh
-$ docker run -d -t --name my-centos centos
+$ docker run -d -t --name my-container centos
 ```
+
+### Check running containers
 
 ```sh
 $ docker ps
+```
+
+Example output:
+
+```
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                      NAMES
+8332318ac5b5        centos                  "/bin/bash"              8 seconds ago       Up 6 seconds                                   my-container
+
 ```
 
 ### Start terminal
@@ -31,7 +52,7 @@ $ docker ps
 Start a Bash terminal in an already running container. Use `bash` or `sh`.
 
 ```sh
-docker exec -it my-centos bash
+docker exec -it my-container bash
 ```
 
 Now you're in the container.
@@ -57,16 +78,30 @@ Exit using `exit` for <kbd>CTRL</kbd>+<kbd>D</kbd>
 ### Stop
 
 ```sh
-$ docker stop my-centos
+$ docker stop my-container
 ```
-
 
 ### Start
 
+Start the container up again. You'll keep any data and packages you have before.
+
 ```sh
-$ docker start my-centos
+$ docker start my-container
 ```
 
+### Remove
+
+Delete a container. You must stop it first.
+
+```sh
+$ docker rm my-container
+```
+
+Or use this to remove the container when it exits.
+
+```sh
+docker run -rm OPTIONS
+```
 
 ## Use Network Chuck's image
 

@@ -31,3 +31,5 @@ If you want to get into the Bash shell:
 ```sh
 $ docker run -it --entrypoint bash node-app
 ```
+
+That will start a new container.

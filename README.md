@@ -18,12 +18,12 @@ Follow the [Download and install](https://docs.docker.com/get-docker/) guide on 
 Then clone the repo.
 
 ```sh
-git clone git@github.com:MichaelCurrin/docker-quickstart.git
-cd docker-quickstart
+$ git clone git@github.com:MichaelCurrin/docker-quickstart.git
+$ cd docker-quickstart
 ```
 
-## Usage
 
+## Usage
 
 - [Basic](basic.md)
 - [Example projects](examples/)

@@ -7,7 +7,7 @@
 
 This project is based on this [Youtube tutorial](https://www.youtube.com/watch?v=eGz9DS-aIeY) by NetworkChuck.
 
-See my [Containers](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md) guide.
+For more background and links around Docker, see my [Docker](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md) guide.
 
 
 

@@ -2,9 +2,9 @@
 
 How to combine multiple stages or layer in a Dockerfile - such as adding multiple `FROM` lines.
 
+See [Builder](https://docs.docker.com/engine/reference/builder/) reference in Docker docs.
 
-From [Builder pattern vs. Multi-stage builds in Docker](http://blog.alexellis.io/mutli-stage-docker-builds/)
-
+From [Builder pattern vs. Multi-stage builds in Docker](http://blog.alexellis.io/mutli-stage-docker-builds/), there are two patterns:
 
 - Builder Pattern
     - > The builder pattern involves using two Docker images - one to perform a build and another to ship the results of the first build without the penalty of the build-chain and tooling in the first image.

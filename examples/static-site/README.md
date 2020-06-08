@@ -1,9 +1,15 @@
 # Static site example
 > Using Nginx to run a static website
 
+
+## Source
+
 Nginx image docs: 
 
 - https://hub.docker.com/_/nginx
+
+Follow that guide for more advanced usage.
+
 
 ## Usage
 
@@ -14,11 +20,15 @@ $ cd examples/static-site
 Build image.
 
 ```sh
-$ docker build -t some-content-nginx .
+$ docker build -t my-nginx-image .
 ```
 
-Run server.
+Create container and run server.
 
 ```sh
-$ docker run --name some-nginx some-content-nginx -d
+$ docker run --name my-nginx-container my-nginx-image -d
 ```
+
+Open in the browser:
+
+- https:localhost:80/

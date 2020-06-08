@@ -19,7 +19,7 @@ For more background and links around Docker, see my [Docker](https://github.com/
 
 Follow the [Download and install](https://docs.docker.com/get-docker/) guide on the Docker docs site.
 
-Then clone the repo.
+Then clone the repo and navigate to it.
 
 ```sh
 $ git clone git@github.com:MichaelCurrin/docker-quickstart.git

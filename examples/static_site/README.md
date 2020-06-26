@@ -4,7 +4,7 @@
 
 ## Source
 
-Nginx image docs: 
+Nginx image docs:
 
 - https://hub.docker.com/_/nginx
 
@@ -14,7 +14,7 @@ Follow that guide for more advanced usage.
 ## Usage
 
 ```sh
-$ cd examples/static-site
+$ cd examples/static_site
 ```
 
 Build image.

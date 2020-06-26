@@ -3,7 +3,7 @@
 
 This project assumes some knowledge of Docker already. It provides some commands to manage containers in a beginner-friendly way.
 
-Some basic  projects in various language like Node and Python are included so you can get up and running with those without piecing together a Dockerfile or shell commands yourself. Plus you can use the samples as references when you are working on a real project.  
+Some basic  projects in various language like Node and Python are included so you can get up and running with those without piecing together a Dockerfile or shell commands yourself. Plus you can use the samples as references when you are working on a real project.
 
 
 ## Resources
@@ -29,11 +29,11 @@ $ cd docker-quickstart
 
 ### Usage
 
-- [Basic](basic.md)
+- [Basic](/basic.md)
     - Follow the instructions. You don't even need the repo cloned to run the commands.
-- [Example projects](examples/)
+- [Example projects](/examples/)
     - Follow instructions for each example you are interested in. The `Dockerfile` is important as it defines and base image and any configuration suitable for the app or chosen programming language.
- 
+
 
 
 ## License

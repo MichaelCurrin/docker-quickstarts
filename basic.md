@@ -1,5 +1,5 @@
 # Basic
-> How to create and manager docker containers without a `Dockerfile`.
+> How to create and manager docker containers - with no `Dockerfile`.
 
 
 ## Create a Linux container
@@ -17,7 +17,7 @@ Ideas:
 - `ubuntu:20.04`
 
 
-We use `centos` for the example below.
+We use `centos` for the example below, but `ubuntu` is another good choice.
 
 ### Pull
 
@@ -29,9 +29,57 @@ $ docker pull centos
 
 ### Run
 
+<!-- TODO These can be moved to another repo and keep this lighter and less instructional and less thorough -->
+
+#### Basic
+
+```sh
+$ docker run centos
+```
+
+You'll see output logged. If you prefer to run in the background:
+
+```sh
+$ docker run -d centos
+```
+
+```
+  -d, --detach                         Run container in background and print container ID
+```
+
+#### Clean up
+
+```sh
+$ docker run --rm -d centos
+```
+
+Use this flag to remove the container when it is finished.
+
+```
+      --rm                             Automatically remove the container when it exits
+```
+
+#### Name
+
+Start a container using a custom name - e.g. `my-container`.
+
 ```sh
 $ docker run -d -t --name my-container centos
 ```
+
+#### Run interactive
+
+Run interactive shell. 
+
+```sh
+$ docker run -it centos
+```
+
+```
+  -i, --interactive                    Keep STDIN open even if not attached
+  -t, --tty                            Allocate a pseudo-TTY
+```  
+
 
 ### Check running containers
 

@@ -17,7 +17,9 @@ For more background and links around Docker, see my [Docker](https://github.com/
 
 ### Installation
 
-Follow the [Download and install](https://docs.docker.com/get-docker/) guide on the Docker docs site.
+Follow the [Download and install](https://docs.docker.com/get-docker/) guide on the Docker docs site. Or see the [Install Docker](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md#install-docker) section of my Learn to Code project.
+
+### Clone
 
 Then clone the repo and navigate to it.
 

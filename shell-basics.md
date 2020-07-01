@@ -1,5 +1,5 @@
-# Docker shell basics
-> How to create and manage containers from the shell - **without** using creating any files
+# Docker shell-only basics
+> How to create and manage containers from the shell - without using creating any files
 
 
 ## Create a Linux container
@@ -29,7 +29,7 @@ The [Docker hub](https://hub.docker.com/) site is a good place to look for more 
 Note that you can run Linux containers on a Linux, Windows or macOS system. However, you can only run a Windows container on a Windows machine, based on this [thread](https://stackoverflow.com/questions/42158596/can-windows-containers-be-hosted-on-linux).
 
 
-### Pull
+### Download image
 
 This will use the latest tag by default.
 
@@ -37,11 +37,15 @@ This will use the latest tag by default.
 $ docker pull centos
 ```
 
-### Run
+You can then reuse this image in other images or in a container.
+
+### Run container
 
 <!-- TODO These can be moved to another repo and keep this lighter and less instructional and less thorough -->
 
 #### Basic
+
+Start running an unammed container using `centos` image. If you skipped the `pull` command above, Docker will download the image for you.
 
 ```sh
 $ docker run centos

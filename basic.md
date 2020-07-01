@@ -1,9 +1,16 @@
 # Basic
-> How to create and manage containers **without** using a `Dockerfile`
+> How to create and manage containers from the shell - **without** using creating any files
 
-A quick way to get started with a container is to choose one specific to an OS, download the image and create a container for it. In this simple case, there is no app, there are no custom dependencies. You can do what you like in the container.
+## Intro
 
-If you want a more complex setup for an app and its dependencies or you want to package your setup for someone else to use, then look at the [examples](/examples/) section of this project. That deals with using a `Dockerfile`.
+### The shell approach approach
+A quick way to get started with a container is to choose one specific to an OS, download the image and create and run a container for it - all from the shell. In this simple case, there is no app to run and there are no custom dependencies. You can do what you like in the container to install and run things and start over if you don't like it.
+
+### When can I use a Dockerfile?
+
+It is a good idea to start with handling a container using the commands here without worrying about creating any files yet. Then later you can move to the file-based approach, where commands you run by hand in the shell are now in a recipe which can be reproduced easily by you or someone else - anyone with the `Dockerfile`. This recipe is the `Dockerfile` - useful if you have a few or many image build steps such as setting up an app and its dependencies. 
+
+See [examples](/examples/) section of this project if you are interested in that.
 
 
 ## Create a Linux container

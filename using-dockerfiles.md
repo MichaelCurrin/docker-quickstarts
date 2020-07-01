@@ -54,9 +54,18 @@ CMD ...
 
 The `FROM` line specifies the base image, usually Linux flavor (e.g. `ubuntu`) or a specialized container such as for Python or NodeJS.
 
+If the target image does not exist yet, Docker will download it. On later build or run commands, that image will be reused from the cache.
+
+If you want to download an image independently of using it in a `FROM` line, you can run:
+
+```sh
+$ docker pull IMAGE
+```
+
 ### RUN
 
 There are usually some `RUN` commands when building the image.
+
   - This is usually a command to **update** the APT package listing. This is usually required or the next step will fail.
       ```sh
       RUN apt-get update

@@ -115,12 +115,18 @@ I'd recommend against copying to `/` since there are directories there relating 
 Finally there is usually `CMD` or `ENTRYPOINT` at the end. This will only be run when the container starts - not during the build image step.
 
 - `CMD` sets _default_ command and/or parameters, such as starting a server or entering the Python or Bash shell. The default command can be _ignored_  if overwritten when running the container.
-    ```sh
+    ```dockerfile
     CMD echo "Hello world"
     ```
+    ```dockerfile
+    CMD ["/bin/bash"]
+    ```
 - `ENTRYPOINT` configures a container that will run as an executable. The entry point will _always_ run even if the command is overwritten.
-    ```sh
+    ```dockerfle
     ENTRYPOINT echo "Hello world"
-      ```
+    ```
+    ```dockerfile
+    ENTRYPOINT ["/bin/bash"]
+    ```
         
 See more info in this [post](https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/).

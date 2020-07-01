@@ -14,7 +14,7 @@ If you start off by using a `Dockerfile`, you're going to be rerunning the entir
 
 It is a good idea to start with handling a container using the commands here without worrying about creating any files yet. Then later you can move to the file-based approach, where commands you run by hand in the shell are now in a recipe which can be reproduced easily by you or someone else - anyone with the `Dockerfile`. This recipe is the `Dockerfile` - useful if you have a few or many image build steps such as setting up an app and its dependencies. 
 
-See [examples](/examples/) section of this project if you are interested in that.
+See the [Using Dockerfiles](/using-dockerfiles.md) page in this project if you are interested in that.
 
 
 ## Create a Linux container

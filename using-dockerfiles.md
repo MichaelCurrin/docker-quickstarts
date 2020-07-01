@@ -7,9 +7,28 @@ This relates to the [examples](/examples/) section of this project where each qu
 See [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) in the Docker docs.
 
 
-## Pattern
+## An example
 
-Here is an outline of a `Dockerfile`.
+Copied from [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
+```dockerfile
+FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+```
+
+Each instruction creates one layer:
+
+> - `FROM` creates a layer from the ubuntu:18.04 Docker image.
+> - `COPY` adds files from your Docker client’s current directory.
+> - `RUN` builds your application with make.
+> - `CMD` specifies what command to run within the container.
+
+
+## General pattern
+
+Here is an outline of a typical `Dockerfile`.
 
 ```dockerfile
 FROM ...
@@ -56,7 +75,40 @@ This defaults to `~` - that would be `/root`.
 
 ### COPY
 
-There is sometimes a `COPY` commnd to copy a file or folder into the container. This is often done to `/` or `/app` but `~` can work as well. Note that the user will be `root` so `sudo` is not needed and the path to `~` will be `/root`. I'd recommend against copying to `/` since there are directories there relating to the system (similar to a system not insider a container).
+There is sometimes a `COPY` commnd to copy a file or folder into the container.
+
+#### Source
+
+The source could be a file.
+
+```dockerfile
+COPY foo.txt /root
+```
+
+Or the contents of a directory. Note - the _contents_ of the directory are copied, not the directory itself.
+
+```dockerfile
+# Similar to this in Bash: cp bar/* /root
+COPY bar /root
+```
+
+Or a directory.
+
+```dockerfile
+COPY bar /root/bar
+```
+
+Or your entire project.
+
+```dockerfile
+COPY . /root
+```
+
+#### Destination
+
+This is often copied to `/` or `/app` but `~` can work as well. Note that the user will be `root` so `sudo` is not needed and the path to `~` will be `/root`. Also my linter recommends using an absolute rather than `~`.
+
+I'd recommend against copying to `/` since there are directories there relating to the system (similar to a system not insider a container).
 
 ### CMD / ENTRYPOINT
 

@@ -1,6 +1,6 @@
 # Using Dockerfiles
 
-This relates to the [examples](/examples/) section of this project where each quickstart app has a `Dockerfile.
+This relates to the [examples](/examples/) section of this project where each quickstart app has a `Dockerfile`
 
 ## What is a Dockerfile?
 

@@ -1,23 +1,37 @@
 # Basic
-> How to create and manager docker containers - with no `Dockerfile`.
+> How to create and manage containers **without** using a `Dockerfile`
+
+A quick way to get started with a container is to choose one specific to an OS, download the image and create a container for it. In this simple case, there is no app, there are no custom dependencies. You can do what you like in the container.
+
+If you want a more complex setup for an app and its dependencies or you want to package your setup for someone else to use, then look at the [examples](/examples/) section of this project. That deals with using a `Dockerfile`.
 
 
 ## Create a Linux container
 
-Note that this not use any files in this repo.
+You can run the commands in this guide without a copy of this `docker-quickstart` repo and without creating a `Dockerfile`.
 
 ### Choose a base image
 
-Ideas:
+All containers need a base image. First figure out what OS you want and then find an appropriate image.
+
+We use `centos` for the example below, but you can use `ubuntu` or something else of course.
+
+Here are some flavors of Linux:
 
 - `centos`
 - `alpine` (Debian)
 - `archlinux`
-- `ubuntu` (same as `ubuntu:latest`)
+- `ubuntu`
+
+If you want to specify a version, you can do something like this:
+
+- `ubuntu:latest` (same as just using `ubuntu`)
 - `ubuntu:20.04`
 
+The [Docker hub](https://hub.docker.com/) site is a good place to look for more options. You don't have to download from the site, as you just need a valid name to reference on the command-line. If you want, you can choose something more specialized like a Node.js, Python or Go container (which internally probably uses Ubuntu.
 
-We use `centos` for the example below, but `ubuntu` is another good choice.
+Note that you can run Linux containers on a Linux, Windows or macOS system. However, you can only run a Windows container on a Windows machine, based on this [thread](https://stackoverflow.com/questions/42158596/can-windows-containers-be-hosted-on-linux).
+
 
 ### Pull
 

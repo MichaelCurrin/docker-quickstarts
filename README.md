@@ -1,4 +1,4 @@
-# Docker Quickstart
+# Docker Quickstart 🐳
 > Instructions and sample projects to get started with Docker containers
 
 This project assumes some knowledge of Docker already. It provides some commands to manage containers in a beginner-friendly way.

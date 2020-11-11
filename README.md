@@ -1,5 +1,8 @@
-# Docker Quickstart 🐳
+# Docker Quickstarts 📦📦📦🐳  
 > Instructions and sample projects to get started with Docker containers
+
+[![Made with - Docker](https://img.shields.io/badge/Made_with-Docker-blue?logo=docker&logoColor=white)](https://www.docker.com/)
+
 
 This project assumes some knowledge of Docker already. It provides some commands to manage containers in a beginner-friendly way.
 
@@ -8,7 +11,7 @@ Some basic  projects in various language like Node and Python are included so yo
 
 ## Resources
 
-This project is based on this [Youtube tutorial](https://www.youtube.com/watch?v=eGz9DS-aIeY) by _NetworkChuck_. That covers the reason containers exist and covers how to create and manage containers in a beginner-friendly way. He covers how to run locally and how to deploy your container to a cloud environment such as Linode, using a $20 credit.
+This project is based on this [YouTube tutorial](https://www.youtube.com/watch?v=eGz9DS-aIeY) by _NetworkChuck_. That covers the reason containers exist and covers how to create and manage containers in a beginner-friendly way. He covers how to run locally and how to deploy your container to a cloud environment such as Linode, using a $20 credit.
 
 For more background and links around Docker, see my [Docker](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md) guide.
 

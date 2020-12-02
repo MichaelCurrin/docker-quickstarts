@@ -1,10 +1,12 @@
 # Static site example
-> Using Nginx to run a static website
+> Use Nginx in a container to run a static website
+
+See [Nginx](https://www.nginx.com/) homepage.
 
 
 ## Source
 
-Nginx image docs:
+See the Docker Hub docs for the Nginx image:
 
 - https://hub.docker.com/_/nginx
 

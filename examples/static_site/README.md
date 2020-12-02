@@ -31,4 +31,4 @@ $ docker run --name my-nginx-container my-nginx-image -d
 
 Open in the browser:
 
-- https:localhost:80/
+- [localhost:80/](https:localhost:80/)

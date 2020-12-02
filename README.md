@@ -41,7 +41,7 @@ If you are confident with Docker or have gone through the Dockerfile notes linke
 
 ### Installation
 
-#### Install System dependencies
+#### Install system dependencies
 
 Follow the [Download and install](https://docs.docker.com/get-docker/) guide on the Docker docs site. Or see the [Install Docker](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md#install-docker) section of my Learn to Code project.
 
@@ -50,8 +50,8 @@ Follow the [Download and install](https://docs.docker.com/get-docker/) guide on 
 Then clone the repo and navigate to it.
 
 ```sh
-$ git clone git@github.com:MichaelCurrin/docker-quickstart.git
-$ cd docker-quickstart
+$ git clone git@github.com:MichaelCurrin/docker-quickstarts.git
+$ cd docker-quickstarts
 ```
 
 ### Usage

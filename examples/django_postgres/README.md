@@ -10,4 +10,4 @@ See that page for further instructions.
 $ docker-compose run web django-admin startproject composeexample .
 ```
 
-Note - the original project requierd `Django>=2.0,<3.0` but there was a vulnerability requiring `3.0.7` or higher so that was adjusted. The sample project might not work the same.
+Note - the original project required `Django>=2.0,<3.0` but there was a vulnerability requiring `3.0.7` or higher so that was adjusted. The sample project might not work the same.

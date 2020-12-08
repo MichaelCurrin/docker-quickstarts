@@ -4,8 +4,11 @@ Based on:
 
 - https://docs.docker.com/compose/django/
 
-See that page for further instructions.
+
+Create a sample project
 
 ```sh
 $ docker-compose run web django-admin startproject composeexample .
 ```
+
+See the linked guide for further steps like setting up a database section in `composeexample/settings.py`.

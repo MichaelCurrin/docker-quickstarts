@@ -4,7 +4,7 @@
 
 ## Create a Linux container
 
-You can run the commands in this guide without a copy of this `docker-quickstart` repo and without creating a `Dockerfile`.
+You can run the commands in this guide without a copy of this `docker-quickstarts` repo and without creating a `Dockerfile`.
 
 ### Choose a base image
 

@@ -1,12 +1,25 @@
-# Docker Quickstarts 📦📦📦🐳  
+# Docker Quickstarts 📦📦📦🐳
 > Instructions and sample projects to get started with Docker containers
+
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/docker-quickstarts?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/docker-quickstarts/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with - Docker](https://img.shields.io/badge/Made_with-Docker-blue?logo=docker&logoColor=white)](https://www.docker.com/)
 
 
+## Intro
+
 This project assumes some knowledge of Docker already. It provides some commands to manage containers in a beginner-friendly way.
 
-Some basic  projects in various language like Node and Python are included so you can get up and running with those without piecing together a Dockerfile or shell commands yourself. Plus you can use the samples as references when you are working on a real project.
+Some basic projects are provided so you can get up and running with those without piecing together a Dockerfile or shell commands yourself. Plus you can use the samples as references when you are working on a real project.
+
+Tools and languages supported:
+
+- Node
+- Python
+- Go
+- Python + Django + PostgreSQL
+- Nginx
 
 
 ## Resources
@@ -30,7 +43,7 @@ See the [Docker shell basics](/shell-basics.md) page in this project if you are 
 
 ### Learn the Dockerfile approach
 
-It is a good idea to start with handling a container using the commands here without worrying about creating any files yet. Then later you can move to the file-based approach, where commands you run by hand in the shell are now in a recipe which can be reproduced easily by you or someone else - anyone with the `Dockerfile`. This recipe is the `Dockerfile` - useful if you have a few or many image build steps such as setting up an app and its dependencies. 
+It is a good idea to start with handling a container using the commands here without worrying about creating any files yet. Then later you can move to the file-based approach, where commands you run by hand in the shell are now in a recipe which can be reproduced easily by you or someone else - anyone with the `Dockerfile`. This recipe is the `Dockerfile` - useful if you have a few or many image build steps such as setting up an app and its dependencies.
 
 See the [Using Dockerfiles](/using-dockerfiles.md) page in this project if you are interested in that.
 
@@ -56,7 +69,7 @@ $ cd docker-quickstarts
 
 ### Usage
 
-- [Docker shell basics](/shell-basisc.md)
+- [Docker shell basics](/shell-basics.md)
     - Follow the instructions. You don't even need the repo cloned to run the commands.
 - [Example projects](/examples/)
     - Follow instructions for each example you are interested in. The `Dockerfile` is important as it defines and base image and any configuration suitable for the app or chosen programming language.
@@ -64,4 +77,4 @@ $ cd docker-quickstarts
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).

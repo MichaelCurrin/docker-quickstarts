@@ -75,24 +75,44 @@ Use this flag to remove the container when it is finished.
 
 #### Name
 
-Start a container using a custom name - e.g. `my-container`.
+Start a container using a custom name.
 
 ```sh
-$ docker run -d -t --name my-container centos
+$ docker run --name my-container centos
 ```
+
+This allows you to have multiple containers for the same image.
+
+```sh
+$ docker run --name my-container-1 centos
+$ docker run --name my-container-2 centos
+```
+
+If you don't add the name, you'll get a random name that Docker decides for you. Which is fine if you use `--rm` and don't need the container to persist.
+
+Optionally run in background mode with `-d` and using `-t` for SSH access (I think).
 
 #### Run interactive
 
-Run interactive shell. 
+Run interactive shell.
 
 ```sh
 $ docker run -it centos
 ```
 
+This might just run and exit immediately. So specify a command to execute. Such as `bash` to start as Bash Shell console in the container.
+
+```sh
+$ docker run -it centos bash
+root@56874667f6fc:/root#
+```
+
+Flags used:
+
 ```
   -i, --interactive                    Keep STDIN open even if not attached
   -t, --tty                            Allocate a pseudo-TTY
-```  
+```
 
 
 ### Check running containers

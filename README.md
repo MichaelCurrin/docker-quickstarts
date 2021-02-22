@@ -13,13 +13,21 @@ This project assumes some knowledge of Docker already. It provides some commands
 
 Some basic projects are provided so you can get up and running with those without piecing together a Dockerfile or shell commands yourself. Plus you can use the samples as references when you are working on a real project.
 
-Tools and languages supported:
+Tools and languages in the examples:
 
 - Node
 - Python
 - Go
 - Python + Django + PostgreSQL
 - Nginx
+
+The examples are built around a minimal setup like:
+
+- `README.md` with instructions and shell commands.
+- `Dockerfile`
+- A language-specific script and config.
+
+In larger applications, it would be a good idea to use a `docker-compose` setup, to make the shell commands you use much shorter.
 
 
 ## Resources

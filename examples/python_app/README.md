@@ -23,7 +23,13 @@ Run container:
 $ docker run -it --rm --name my-running-app my-python-app
 ```
 ```
+Standard greeting:
 Hello, World!
+
+Requesting: http://httpbin.org/get?message=Hello,%20World!
+Status: 200
+JSON response:
+{'args': {'message': 'Hello, World!'}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.25.1', 'X-Amzn-Trace-Id': 'Root=1-60336ebd-1e87133e371bbc97206c224f'}, 'origin': '165.255.x.x', 'url': 'http://httpbin.org/get?message=Hello, World!'}
 ```
 
 
@@ -39,7 +45,7 @@ $ docker run -it --rm \
     -v "$PWD":/usr/src/myapp \
     -w /usr/src/myapp \
     python:3.9 \
-    python app.py
+    python greet.py
 ```
 ```
 Hello, World!
@@ -56,6 +62,9 @@ Notes:
     - We give it access to the files in your repo using the `-v, --volume` flag, to avoid having to copy images into the container.
     - This also means that file changes in or out the container are seen **immediately**. Compare with using `COPY` in a Dockerfile, which means you have to rebuild the whole image and container whenever you make even a small code change in your scripts.
 - The container is deleted after each run.
+- Dependencies
+    - With the Dockerfile approach, you install dependencies in the image. You don't even need a virtual environment as global is safe in a container.
+    - With the no-Dockerfile approach, you need to install dependencies outside your container. Preferably in a virtual environment in your project as `venv`, which can be accessed in the container. The container won't be able to access any globally-installed packages on your host, unless you specifically add a path as another volume. The example above uses the [greet.py](greet.py) script, having no dependencies.
 
 
 ## Choosing an image
@@ -75,3 +84,28 @@ Or pick a specific OS like:
 You can use a generic Ubuntu image, but you will have less control and transparency over what Python version you get.
 
 - `FROM ubuntu:18.04`
+
+
+## Using make
+
+If you prefer, in your `Dockerfile` your install step can be:
+
+```Dockerfile
+RUN make
+```
+
+And then setup:
+
+- `Makefile`
+    ```Makefile
+    install:
+        pip install --no-cache-dir -r requirements.txt
+    ```
+
+And maybe upgrade `pip` or install dev dependencies too.
+
+The no-cache option was recommended in the Python DockerHub section.
+
+From my research - this prevents storing fetched packages in a cache directory. This keeps size of the Docker image **smaller**. And there is no point in storing a cache because the image gets rebuilt fresh each time, unlike a normal application which can reuse the cache on repeat installs.
+
+It seems reasonable to use the no-cache option outside the container too - so you only need to setup one install command.

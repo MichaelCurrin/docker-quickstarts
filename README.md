@@ -36,6 +36,8 @@ This project is based on this [YouTube tutorial](https://www.youtube.com/watch?v
 
 For more background and links around Docker, see my [Docker](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/containers/docker.md) guide.
 
+See also [Awesome Compose](https://github.com/docker/awesome-compose) repo which is similar to this project. It contains examples of Docker apps made with Rust, Go, React, Vue etc. All using `Dockerfile` and `docker-compose.yml`.
+
 
 ## Learn Docker
 

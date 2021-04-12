@@ -2,7 +2,8 @@
 
 Based on Node.js sample from th Docker labs repo - 
 
-The image used here [node](https://hub.docker.com/_/node/) from Docker Hub.
+In this sample we use thee [node](https://hub.docker.com/_/node/) from DockerHub and the [express](https://www.npmjs.com/package/express) NPM package.
+
 
 ## Resources
 

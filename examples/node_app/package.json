@@ -4,10 +4,8 @@
   "description": "Based on Node.js sample from Docker labs repo.",
   "main": "index.js",
   "scripts": {
-    "start": "echo Hello world",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "Michael Currin",
+  "author": "MichaelCurrin",
   "license": "MIT"
 }

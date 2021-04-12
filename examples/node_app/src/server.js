@@ -1,13 +1,13 @@
 import express from 'express';
 
-const PORT = 80;
 const HOST = '0.0.0.0';
+const PORT = 80;
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('Hello World');
 });
 
+console.log(`Starting dev server on http://${HOST}:${PORT}`);
 app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);

@@ -2,8 +2,8 @@
 
 Based on Node.js sample from Docker labs repo.
 
-- https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/
-- https://github.com/docker/labs/blob/master/developer-tools/nodejs/porting/2_application_image.md
+- [Porting](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/)
+- [Porting - application image](https://github.com/docker/labs/blob/master/developer-tools/nodejs/porting/2_application_image.md)
 
 
 ## Usage
@@ -24,12 +24,14 @@ Run it.
 $ docker run node-app
 ```
 
-Note that this example is note complete so will exit immediately.
+Note that this example is not complete so will exit immediately.
 
-If you want to get into the Bash shell:
+### Shell
+
+If you want to get into the Bash shell to look around or install packages:
 
 ```sh
-$ docker run -it --entrypoint bash node-app
+$ docker run -it node-app --entrypoint bash
 ```
 
 That will start a new container.

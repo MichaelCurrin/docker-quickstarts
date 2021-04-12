@@ -18,13 +18,12 @@ Build and tag as `node-app`.
 $ docker build -t node-app .
 ```
 
-Run it.
+Run it. This will show a greeting and then exit.
 
 ```sh
 $ docker run node-app
+Hello, World!
 ```
-
-Note that this example is not complete so will exit immediately.
 
 ### Shell
 

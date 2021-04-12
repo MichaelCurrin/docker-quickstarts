@@ -2,9 +2,8 @@
   "name": "node_app",
   "version": "1.0.0",
   "description": "Based on Node.js sample from Docker labs repo.",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "cd src && node index.js"
   },
   "author": "MichaelCurrin",
   "license": "MIT"

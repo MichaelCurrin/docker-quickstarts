@@ -1,9 +1,14 @@
 # Node app
 
-Based on Node.js sample from Docker labs repo.
+Based on Node.js sample from th Docker labs repo - 
 
-- [Porting](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/)
-- [Porting - application image](https://github.com/docker/labs/blob/master/developer-tools/nodejs/porting/2_application_image.md)
+The image used here [node](https://hub.docker.com/_/node/) from Docker Hub.
+
+## Resources
+
+- [Node docker web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) from Node dos.
+- [Docker Node Mongo](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) example from Docker labs repo.
+- [Create a simple Node.js Hello World Docker Container from scratch](https://flaviocopes.com/docker-node-container-example/)
 
 
 ## Usage
@@ -18,12 +23,15 @@ Build and tag as `node-app`.
 $ docker build -t node-app .
 ```
 
-Run it. This will show a greeting and then exit.
+Run it. This will start a dev server.
 
 ```sh
 $ docker run node-app
-Hello, World!
 ```
+
+Open the browser at:
+
+- http://localhost:80
 
 ### Shell
 

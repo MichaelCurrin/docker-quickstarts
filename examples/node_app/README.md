@@ -34,6 +34,8 @@ $ docker run --rm -p 80:80 node-app
 Starting dev server on http://0.0.0.0:80
 ```
 
+Optionally set a name for the container like `--name my-app`.
+
 Note we use `-p` to expose and publish port `80`, so using `EXPOSE 80` in [Dockerfile](Dockerfile) is unnecessary.
 
 Open the browser at:

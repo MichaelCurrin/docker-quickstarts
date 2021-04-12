@@ -31,7 +31,7 @@ Run the app - this will start a dev server.
 
 ```sh
 $ docker run --rm -p 80:8080 node-app
-Starting dev server on http://0.0.0.0:80
+Listening on http://localhost:80
 ```
 
 The Node app is serving on port `8080`, but Docker routes that to port `80` on the host.

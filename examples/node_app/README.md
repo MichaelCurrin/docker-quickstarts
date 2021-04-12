@@ -7,10 +7,10 @@ In this sample we use thee [node](https://hub.docker.com/_/node/) from DockerHub
 
 ## Resources
 
-- [Node docker web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) from Node dos.
-- [Docker Node Mongo](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) example from Docker labs repo.
+- [Node.js docker web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) from Node docs.
 - [Create a simple Node.js Hello World Docker Container from scratch](https://flaviocopes.com/docker-node-container-example/)
 - [Express Quickstart](https://github.com/MichaelCurrin/express-quickstart)
+- [Docker Node Sails Mongo](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) example from Docker labs repo.
 
 
 ## Usage

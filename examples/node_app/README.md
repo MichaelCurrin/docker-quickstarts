@@ -30,17 +30,16 @@ $ docker build -t node-app .
 Run the app - this will start a dev server.
 
 ```sh
-$ docker run --rm -p 80:80 node-app
+$ docker run --rm -p 80:8080 node-app
 Starting dev server on http://0.0.0.0:80
 ```
 
-Optionally set a name for the container like `--name my-app`.
-
-Note we use `-p` to expose and publish port `80`, so using `EXPOSE 80` in [Dockerfile](Dockerfile) is unnecessary.
+The Node app is serving on port `8080`, but Docker routes that to port `80` on the host.
 
 Open the browser at:
 
 - http://localhost:80
+
 
 ### Setup and run on the host
 
@@ -51,3 +50,7 @@ $ npm install
 ```sh
 $ npm start
 ```
+
+Open the browser at:
+
+- http://localhost:8080

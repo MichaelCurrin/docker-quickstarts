@@ -58,6 +58,9 @@ Open the browser at:
 
 ## Notes
 
-Your app should probably have a lockfile. Then you can use `npm ci` instead of `npm install`.
+Around use of NPM in the [Dockerfile](Dockerfile).
 
-On cache clearing, the idea it to keep the image smaller by deleting cached downloads which are not needed for running. You should not have to run on your host but it helps for Docker images.
+- Your app should probably have a lockfile. Then you can use `npm ci` instead of `npm install`.
+- On cache clearing, the idea it to keep the image smaller by deleting cached downloads which are not needed for running. You should not have to run on your host but it helps for Docker images.
+- The `--production` flag keeps the container lighter by not installing dev dependencies.
+- The `--loglevel warn` part keeps the log lighter, by only showing warning and higher.

@@ -3,7 +3,7 @@ FROM node:14
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-RUN npm ci --production --loglevel warn && \
+RUN npm install --production --loglevel warn && \
   npm cache clean --force
 
 COPY . .

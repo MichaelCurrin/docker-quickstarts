@@ -41,7 +41,7 @@ Open the browser at:
 - http://localhost:80
 
 
-### Setup and run on the host
+### Set up and run on the host
 
 ```sh
 $ npm install
@@ -54,3 +54,10 @@ $ npm start
 Open the browser at:
 
 - http://localhost:8080
+
+
+## Notes
+
+Your app should probably have a lockfile. Then you can use `npm ci` instead of `npm install`.
+
+On cache clearing, the idea it to keep the image smaller by deleting cached downloads which are not needed for running. You should not have to run on your host but it helps for Docker images.

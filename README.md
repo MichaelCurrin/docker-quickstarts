@@ -80,9 +80,11 @@ $ cd docker-quickstarts
 ### Usage
 
 - [Docker shell basics](/shell-basics.md)
-    - Follow the instructions. You don't even need the repo cloned to run the commands.
+    - Follow the steps to download images from Docker Hub and create containers from them.
+    - No `Dockerfile` or app directories needed. So you don't need to clone this repo to run the steps.
 - [Example projects](/examples/)
-    - Follow instructions for each example you are interested in. The `Dockerfile` is important as it defines and base image and any configuration suitable for the app or chosen programming language.
+    - Follow instructions for each example you are interested in. 
+    -The `Dockerfile` is important as it defines and base image and any configuration suitable for the app or chosen programming language.
 
 
 ## License

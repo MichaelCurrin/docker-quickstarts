@@ -1,6 +1,8 @@
 # Docker shell-only basics
 > How to create and manage containers from the shell - without using creating any files
 
+See also my [Docker CLI](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/containers/docker-cli.html) cheatsheet.
+
 
 ## Create a Linux container
 
@@ -27,7 +29,6 @@ If you want to specify a version, you can do something like this:
 The [Docker hub](https://hub.docker.com/) site is a good place to look for more options. You don't have to download from the site, as you just need a valid name to reference on the command-line. If you want, you can choose something more specialized like a Node.js, Python or Go container (which internally probably uses Ubuntu.
 
 Note that you can run Linux containers on a Linux, Windows or macOS system. However, you can only run a Windows container on a Windows machine, based on this [thread](https://stackoverflow.com/questions/42158596/can-windows-containers-be-hosted-on-linux).
-
 
 ### Download image
 

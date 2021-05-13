@@ -91,7 +91,7 @@ You can use a generic Ubuntu image, but you will have less control and transpare
 If you prefer, in your `Dockerfile` your install step can be:
 
 ```Dockerfile
-RUN make
+RUN make install
 ```
 
 And then setup:
@@ -99,13 +99,9 @@ And then setup:
 - `Makefile`
     ```Makefile
     install:
-        pip install --no-cache-dir -r requirements.txt
+        pip install -r requirements.txt --no-cache-dir 
     ```
 
 And maybe upgrade `pip` or install dev dependencies too.
 
-The no-cache option was recommended in the Python DockerHub section.
-
-From my research - this prevents storing fetched packages in a cache directory. This keeps size of the Docker image **smaller**. And there is no point in storing a cache because the image gets rebuilt fresh each time, unlike a normal application which can reuse the cache on repeat installs.
-
-It seems reasonable to use the no-cache option outside the container too - so you only need to setup one install command.
+The no-cache option was recommended in the Python DockerHub section. It stops downloaded packages from being kept in the cache. This keeps your image smaller. It works fine outside of a container too - your installs might just be slower.

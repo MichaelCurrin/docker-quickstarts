@@ -9,6 +9,13 @@ $ cd examples/python_app
 ```
 
 
+## Related projects
+
+A template for a basic Python app including CI and docs. You can easily add Docker to it.
+
+[![MichaelCurrin - py-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=py-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/py-project-template)
+
+
 ## Usage
 
 Build:

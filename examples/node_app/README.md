@@ -2,7 +2,7 @@
 
 Based on Node.js sample from th Docker labs repo -
 
-In this sample we use thee [node](https://hub.docker.com/_/node/) from DockerHub and the [express](https://www.npmjs.com/package/express) NPM package.
+In this sample we use the [node](https://hub.docker.com/_/node/) image from DockerHub and the [express](https://www.npmjs.com/package/express) NPM package.
 
 
 ## Resources
@@ -11,6 +11,7 @@ In this sample we use thee [node](https://hub.docker.com/_/node/) from DockerHub
 - [Create a simple Node.js Hello World Docker Container from scratch](https://flaviocopes.com/docker-node-container-example/)
 - [Express Quickstart](https://github.com/MichaelCurrin/express-quickstart)
 - [Docker Node Sails Mongo](https://github.com/docker/labs/tree/master/developer-tools/nodejs/porting/) example from Docker labs repo.
+- [Node and Yarn](https://michaelcurrin.github.io/code-cookbook/recipes/containers/node-yarn.html) Docker recipe.
 
 
 ## Usage

@@ -15,18 +15,15 @@ If you run commands from this directory, the [Dockerfile](Dockerfile) here will 
 
 ### Untagged
 
-```sh
+```console
 $ docker build .
-```
-Example:
-```
 ...
 Successfully built 1a9a100194b6
 ```
 
-Run it - use the ID from above.
+Run it - use the ID from above:
 
-```sh
+```console
 $ docker run 7bc362688d42
       1       4      16 -
 ```
@@ -36,23 +33,24 @@ $ docker run 7bc362688d42
 
 Name the image to make it easier to manage.
 
-Build and tag as `generic-app`.
+Build and tag:
 
 ```sh
 $ docker build -t generic-app .
 ```
 
-Run it:
+Run the tagged image:
 
-```sh
+```console
 $ docker run generic-app
       1       4      16 -
 ```
 
 ### Start shell
 
-Get into interactive mode:
+Start in interactive shell mode:
 
-```sh
-docker run --rm -it generic-app
+```console
+$ docker run --rm -it generic-app bash
+root@f886208fe22d:/#
 ```

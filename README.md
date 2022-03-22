@@ -53,7 +53,7 @@ See [Docker Install](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets
 
 #### Clone
 
-Then clone the repo and navigate to it:
+Clone the repo and navigate to it:
 
 ```sh
 $ git clone git@github.com:MichaelCurrin/docker-quickstarts.git
@@ -66,7 +66,7 @@ $ cd docker-quickstarts
 
 See the [example](/examples/) directory.
 
-Follow instructions for each example you are interested in. 
+Follow instructions for each example that you are interested in.
 
 The `Dockerfile` in each is important as it defines and base image and any configuration suitable for the app or chosen programming language.
 
@@ -74,7 +74,7 @@ The `Dockerfile` in each is important as it defines and base image and any confi
 
 For basics on using Docker CLI, see [Docker shell basics][] cheatsheet.
 
-No `Dockerfile` or app directories are needed there. So you can run those commands directly and without having this repo cloned.
+No `Dockerfile` files or app directories are needed there. So you can run those commands directly and without having this repo cloned.
 
 Follow the steps there to download images from Docker Hub and then create containers from them.
 

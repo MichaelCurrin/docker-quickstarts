@@ -42,7 +42,7 @@ Build and tag as `generic-app`.
 $ docker build -t generic-app .
 ```
 
-Run it.
+Run it:
 
 ```sh
 $ docker run generic-app
@@ -51,7 +51,7 @@ $ docker run generic-app
 
 ### Start shell
 
-To get into interative mode:
+Get into interactive mode:
 
 ```sh
 docker run --rm -it generic-app

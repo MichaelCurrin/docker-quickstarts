@@ -1,6 +1,6 @@
 # Go app
 
-See [golang](https://hub.docker.com/_/golang) on DockerHub.
+See [golang](https://hub.docker.com/_/golang) image on DockerHub.
 
 
 ## Usage

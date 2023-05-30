@@ -28,10 +28,8 @@ $ docker build -t my-python-app .
 
 Run container:
 
-```
+```console
 $ docker run -it --rm --name my-running-app my-python-app
-```
-```
 Standard greeting:
 Hello, World!
 
@@ -48,15 +46,13 @@ Run your Python app in a container without using a Dockerfile..
 
 This is a lighter approach. Instead of setting up a Dockerfile, you create a container using the `python:3.9` image and run a container as a binary executable.
 
-```sh
+```console
 $ docker run -it --rm \
     --name my-python-app \
     -v "$PWD":/usr/src/myapp \
     -w /usr/src/myapp \
     python:3.9 \
     python greet.py
-```
-```
 Hello, World!
 ```
 
@@ -97,7 +93,7 @@ You can use a generic Ubuntu image, but you will have less control and transpare
 
 ## Using make
 
-If you prefer, in your `Dockerfile` your install step can be:
+If you prefer, in your `Dockerfile` your installation step can be:
 
 ```Dockerfile
 RUN make install
